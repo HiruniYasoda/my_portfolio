@@ -1,13 +1,7 @@
-function AuthLayout() {
-    return (  
-        <>
-        
-        </>
-    );
-}// AuthLayout.jsx
+
 import React from "react";
 
-function AuthLayout() {
+function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-400 via-purple-500 to-blue-600 p-4">
       <div className="bg-white shadow-2xl rounded-2xl max-w-md w-full p-8">
@@ -47,6 +41,6 @@ function AuthLayout() {
   );
 }
 
-export default AuthLayout;
+export default Login;
 
 
