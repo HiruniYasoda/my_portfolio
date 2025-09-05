@@ -3,14 +3,22 @@ import React from "react";
 function Login() {
   return (
     <div
-      className="min-h-screen flex items-center justify-center bg-cover bg-center p-4"
+      className="min-h-screen flex items-center justify-center bg-cover bg-center p-4 relative overflow-hidden"
       style={{ backgroundImage: "url('/maxresdefault.jpg')" }}
     >
+      {/* Fireflies */}
+      <span className="firefly" style={{ top: "20%", left: "15%", animationDelay: "0s" }}></span>
+      <span className="firefly" style={{ top: "40%", left: "80%", animationDelay: "2s" }}></span>
+      <span className="firefly" style={{ top: "70%", left: "30%", animationDelay: "4s" }}></span>
+      <span className="firefly" style={{ top: "60%", left: "60%", animationDelay: "1s" }}></span>
+      <span className="firefly" style={{ top: "30%", left: "50%", animationDelay: "3s" }}></span>
+
+      {/* Login box with glowing border */}
       <div className="relative bg-white/10 backdrop-blur-md rounded-2xl max-w-md w-full p-8 shadow-2xl border border-cyan-400/50">
-        {/* Glowing border with breathing animation */}
+        {/* Glowing breathing border */}
         <div className="absolute inset-0 rounded-2xl border-2 border-cyan-400 animate-glow"></div>
 
-        {/* Actual content */}
+        {/* Content */}
         <div className="relative z-10">
           <h1 className="text-3xl font-bold text-center text-white mb-6 drop-shadow-lg">
             Admin Login
