@@ -1,18 +1,12 @@
-// App.jsx
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./components/auth/login"; // import your AuthLayout page
-import "./App.css";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        {/* Default route goes to login */}
-        <Route path="/" element={<Login />} />
-
-        
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<h1>Hello World</h1>} />
+      <Route path="/test" element={<h1>Test Page</h1>} />
+    </Routes>
   );
 }
 
