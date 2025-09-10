@@ -17,7 +17,7 @@ export default function IntroScreen() {
   }, []);
 
   // Generate bubbles
-  const bubbleCount = 25;
+  const bubbleCount = 35;
   const bubbles = Array.from({ length: bubbleCount });
 
   return (
@@ -27,7 +27,7 @@ export default function IntroScreen() {
       {bubbles.map((_, i) => {
         const size = Math.random() * 20 + 10; // 10px to 30px
         const left = Math.random() * 100; // percent
-        const duration = Math.random() * 15 + 10; // 10s to 25s
+        const duration = Math.random() * 15 + 5; // 10s to 25s
         const delay = Math.random() * 5;
         const opacity = Math.random() * 0.4 + 0.1; // 0.1 to 0.5
         return (
